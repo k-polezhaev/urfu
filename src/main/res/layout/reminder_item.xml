@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineAmbientShadowColor="@color/purple_200"
+    android:outlineSpotShadowColor="@color/purple_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#21005E"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/info_text_view"
+        android:textColor="#21005E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:textColor="@color/primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:textColor="@color/primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="8dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:shadowColor = "#cac4ce"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:id="@+id/completed_text_view"
+            android:textColor="#21005E"
+            android:layout_marginTop="7dp"
+            android:gravity="left"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp" />
+
+        <ImageButton
+            android:backgroundTint="@color/onprimary"
+            android:id="@+id/remindAdd"
+            android:contentDescription="Edd"
+            android:src="@drawable/baseline_circle_notifications_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/onprimary"
+            android:id="@+id/complete_button"
+            android:contentDescription="Complete"
+            android:src="@drawable/ic_tick" />
+
+        <ImageButton
+            android:id="@+id/delete_button"
+            android:backgroundTint="@color/onprimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Cancel"
+            android:src="@drawable/ic_cross" />
+
+    </LinearLayout>
+
+</LinearLayout>
